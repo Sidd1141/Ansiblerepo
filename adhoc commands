@@ -1,3 +1,8 @@
 ansible all -m package -a "name=httpd state=present"
 ansible all -m copy -a "src=index.html dest=/var/www/html
 ansible all -m service -a "name=httpd state=start enabled=true"
+
+
+ansible-playbook playbook-name --syntax-check
+ansible targetnodeip -m ping
+ansible-playbook -m ping
