@@ -1,0 +1,6 @@
+- hosts: web
+  tasks:
+  - name: to check debug msg
+    debug:
+      msg: "hi i am sidd"
+
